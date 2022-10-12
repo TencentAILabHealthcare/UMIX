@@ -1,4 +1,4 @@
-for((seed=0;seed<4;seed=seed+1))
+for((seed=0;seed<3;seed=seed+1))
 do
 python3 examples/run_expt.py \
         --dataset celebA \

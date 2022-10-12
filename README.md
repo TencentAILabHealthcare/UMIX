@@ -1,6 +1,7 @@
 # UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup
 
-This repository contains the code of our paper UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup. The code is implemented on the code provided by WILDs. If you have any questions, please contact me via the following email zongbo at tju.edu.cn.
+This repository contains the code of our paper UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup. The code is implemented on the code provided by WILDs. 
+If you have any questions, **please contact me via the following email zongbo at tju.edu.cn**.
 
 ## Requirment
 
@@ -26,6 +27,14 @@ This repository contains the code of our paper UMIX: Improving Importance Weight
 * camelyon17
 
 ## Usage
+
+You can run our algorithm from the shell file in the script directory. 
+Specifically, taking the Waterbirds dataset as an example, 
+* you should first run the files in the UMIX_trajectory folder to get the uncertainty. 
+* Then run the files in the UMIX folder to get the model results.
+* You can then re-search for hyperparameters through the files under the UMIX_nni folder.
+
+We also provide our saved checkpoints in this link.
 
 ## Disclaimer
 
