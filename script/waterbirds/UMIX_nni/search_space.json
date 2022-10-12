@@ -1,0 +1,30 @@
+{
+  "lr":{
+    "_type":"choice",
+    "_value":[1e-5]
+  },
+  "weight_decay":{
+    "_type":"choice",
+    "_value":[1.0]
+  },
+  "umxi_T":{
+    "_type":"choice",
+    "_value":[10, 50]
+  },
+  "umix_alpha":{
+    "_type":"choice",
+    "_value":[0.5, 1.5, 3.0]
+  },
+  "umix_eta":{
+    "_type":"choice",
+    "_value":[20.0, 50.0, 80.0]
+  },
+  "umix_T_s":{
+    "_type":"choice",
+    "_value":[50]
+  }, 
+  "umix_sigma":{
+    "_type":"choice",
+    "_value":[0.5, 1.0] 
+  }
+}

@@ -1,0 +1,28 @@
+authorName: root
+experimentName: waterbirds
+trialConcurrency: 36
+maxExecDuration: 156h
+maxTrialNum: 500
+
+trainingServicePlatform: local
+useAnnotation: false
+searchSpacePath: ./script/waterbirds/UMIX_nni/search_space.json
+logDir: ./script/waterbirds/UMIX_nni/logdir
+#
+multiThread: false
+tuner:
+  #
+  builtinTunerName: TPE
+  classArgs: 
+    #
+    optimize_mode: maximize
+  gpuIndices: "0"
+
+trial: 
+  command: bash ./script/waterbirds/UMIX_nni/nni_train.sh
+  codeDir: ./
+  gpuNum: 1
+
+localConfig:
+  maxTrialNumPerGpu: 1
+  useActiveGpu: true
