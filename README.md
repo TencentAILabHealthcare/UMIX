@@ -36,6 +36,11 @@ Specifically, taking the Waterbirds dataset as an example,
 
 We also provide our saved checkpoints in this link.
 
+## Acknowledgements
+The code is built on WILDS codebase v1.2.2 (https://github.com/p-lambda/wilds/releases/tag/v1.2.2). 
+We thank the builders of the original repository.
+Because our method requires some adjustments to the original codebase, we directly upload our modified files for efficiency.
+
 ## Disclaimer
 
 This is not an official Tencent product.
