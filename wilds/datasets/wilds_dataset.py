@@ -30,7 +30,7 @@ class WILDSDataset:
         x = self.get_input(idx)
         y = self.y_array[idx]
         metadata = self.metadata_array[idx]
-        return x, y, metadata
+        return x, y, metadata, idx
 
     def get_input(self, idx):
         """
@@ -457,13 +457,13 @@ class WILDSSubset(WILDSDataset):
         self.do_transform_y = do_transform_y
 
     def __getitem__(self, idx):
-        x, y, metadata = self.dataset[self.indices[idx]]
+        x, y, metadata, _ = self.dataset[self.indices[idx]]
         if self.transform is not None:
             if self.do_transform_y:
                 x, y = self.transform(x, y)
             else:
                 x = self.transform(x)
-        return x, y, metadata
+        return x, y, metadata, idx
 
     def __len__(self):
         return len(self.indices)
