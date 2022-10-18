@@ -12,6 +12,8 @@ benchmark_datasets = [
     'py150',
     'rxrx1',
     'globalwheat',
+    'waterbirds',
+    'celebA'
 ]
 
 additional_datasets = [
