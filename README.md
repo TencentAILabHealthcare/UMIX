@@ -1,6 +1,6 @@
 # UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup
 
-This repository contains the code of our paper UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup. The code is implemented on the code provided by WILDs. 
+This repository contains the code of our paper [UMIX: Improving Importance Weighting for Subpopulation Shift via Uncertainty-Aware Mixup](https://arxiv.org/abs/2209.08928). The code is implemented on the code provided by WILDs. 
 If you have any questions, **please contact me via the following email zongbo at tju.edu.cn**.
 
 ## Requirment
